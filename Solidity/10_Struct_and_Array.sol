@@ -53,3 +53,5 @@ contract SimpleStorage{
     }
 }
 
+
+//NOTE : array indexing starts from 0
