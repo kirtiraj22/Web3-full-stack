@@ -55,3 +55,8 @@ contract SimpleStorage{
 
 
 //NOTE : array indexing starts from 0
+//There are two types of arrays : dynamic and fixed size arrays
+// dynamic size arrays are declared as : 
+uint256[] public names;
+//fixed size arrays are declared as : 
+uint256[5] public name;
