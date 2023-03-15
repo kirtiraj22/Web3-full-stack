@@ -20,3 +20,4 @@ contract SimpleStorage{
 
 //for uint and int the range is from 8 to 256 bits
 //for bytes the range is from bytes1 to bytes32 (bytes1 represents 1 byte and bytes32 represents 32 bytes)
+//NOTE : if you dont initialize the uint, then it will take 0 as the default value.
