@@ -45,6 +45,8 @@ contract StorageFactory{
         SimpleStorage simpleStorage = simpleStorageArray[_simpleStorageIndex];      //simpleStorage contract object
         //calling the store function on the simpleStorage contract
         simpleStorage.store(_simpleStorageNumber);  //storing the number
+        
+        //same as simpleStorageArray[_simpleStorageIndex].store(_simpleStorageNumber);
     }
     //this function will get the number that is stored at a particular index using sfStore
     //NOTE : sfStore means SimpleFactory store and sfGet means SimpleFactory get
@@ -52,6 +54,7 @@ contract StorageFactory{
     function sfGet(uint256 _simpleStorageIndex) public view returns(uint256){           //takes an index and returns an uint256 present at that index
         SimpleStorage simpleStorage = simpleStorageArray[_simpleStorageIndex];
         return simpleStorage.retrieve();                                        //calling the retrieve function present in SimpleStorage.sol
+        //same as return simpleStorageArray[_simpleStorageIndex].retrieve();
     }
 }
 
