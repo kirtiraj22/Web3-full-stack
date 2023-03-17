@@ -14,11 +14,18 @@ contract FundMe{
     //setting a minimum amount in USD
     uint256 minimumUsd = 50 * 1e18;
 
+    //array that keeps track of people who send money to this contract 
+    address[] public funders;
+    //mapping the amount of ETH sent from a particular address
+    mapping(address => uint256) public addressToAmountFunded;
+
     //function to get funds from users
     //anybody can call this function, so it will be public
     function fund() public payable{
         //setting a minimum fund amount in USD
         require(getConversionRate(msg.value) >= minimumUsd, "Didn't send enough!");
+        funders.push(msg.sender);           //msg.sender is the address that calls fund() function
+        addressToAmountFunded[msg.sender] = msg.value;      //this will map the senders address to the amount he sends
     }
 
     //function to get the prices of ethereum, avalanche, or any other layer one blockchain(in USD)
