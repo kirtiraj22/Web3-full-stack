@@ -19,3 +19,10 @@ Compiling smart contracts :
 ```
   npm install solc
 ```
+<br /> 
+
+or by : 
+
+```
+yarn add solc
+```
