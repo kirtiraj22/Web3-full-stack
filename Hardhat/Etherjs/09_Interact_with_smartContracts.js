@@ -13,3 +13,7 @@ const favoriteNumber = await contract.retrieve();
 
 //this will call the retrieve() function in our smart contract
 //that retrieve function will return a uint which will be stored in our favoriteNumber variable
+
+
+//NOTE : we can convert it to string by using :
+console.log(favoriteNumber.toString());
