@@ -8,13 +8,13 @@ async function main() {
 
   //getting the wallet by the encrypted key that we just made
   //fs will read the file encryptedKey.json
-  const encryptedJson = fs.readFileSync("./.encryptedKey.json", "utf8");
+  // const encryptedJson = fs.readFileSync("./.encryptedKey.json", "utf8");
   //now creating wallet from the encrypted key :
   // let wallet = new ethers.Wallet.fromEncryptedJsonSync(
   //   encryptedJson,
   //   process.env.PRIVATE_KEY_PASSWORD
   // );
-  wallet = await wallet.connect(provider);
+  // wallet = await wallet.connect(provider);
   const abi = fs.readFileSync("./SimpleStorage_sol_SimpleStorage.abi", "utf8");
   const binary = fs.readFileSync(
     "./SimpleStorage_sol_SimpleStorage.bin",
@@ -26,6 +26,9 @@ async function main() {
   const contract = await contractFactory.deploy();
   // const transactionReceipt = await contract.deployTransaction.wait(1);
   await contract.deployTransaction.wait(1);
+
+  console.log(`contract address : ${contract.address} `);
+
   //the below code will call the retrieve function of our smart contract
   const currentFavoriteNumber = await contract.retrieve();
   console.log(`Current favorite number : ${currentFavoriteNumber.toString()}`);

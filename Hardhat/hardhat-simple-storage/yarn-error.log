@@ -1,0 +1,40 @@
+Arguments: 
+  /home/kirtiraj/.nvm/versions/node/v16.14.2/bin/node /home/kirtiraj/.node/corepack/yarn/1.22.15/bin/yarn.js add --dev hardhay
+
+PATH: 
+  /home/kirtiraj/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/bin/remote-cli:/home/kirtiraj/.nvm/versions/node/v16.14.2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Program Files (x86)/Common Files/Intel/Shared Libraries/redist/intel64/compiler:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Users/kirti/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/System Tools:/mnt/c/Git/cmd:/mnt/c/Program Files/nodejs/:/mnt/c/Users/kirti/OneDrive/Desktop/SCHOOL MANAGEMNT SYSTEM/c++/bin:/mnt/c/Users/kirti/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/kirti/AppData/Local/GitHubDesktop/bin:/mnt/c/Users/kirti/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/kirti/AppData/Local/Programs/mingw32/bin:/mnt/c/src/flutter/flutter/bin:/mnt/c/Windows/SysWOW64:/mnt/c/Users/kirti/AppData/Roaming/npm:/mnt/c/Users/kirti/OneDrive/AppData/Roaming/npm/bin:/snap/bin
+
+Yarn version: 
+  1.22.15
+
+Node version: 
+  16.14.2
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/hardhay: Not found
+      at Request.params.callback [as _callback] (/home/kirtiraj/.node/corepack/yarn/1.22.15/lib/cli.js:66140:18)
+      at Request.self.callback (/home/kirtiraj/.node/corepack/yarn/1.22.15/lib/cli.js:140885:22)
+      at Request.emit (node:events:526:28)
+      at Request.<anonymous> (/home/kirtiraj/.node/corepack/yarn/1.22.15/lib/cli.js:141857:10)
+      at Request.emit (node:events:526:28)
+      at IncomingMessage.<anonymous> (/home/kirtiraj/.node/corepack/yarn/1.22.15/lib/cli.js:141779:12)
+      at Object.onceWrapper (node:events:645:28)
+      at IncomingMessage.emit (node:events:538:35)
+      at endReadableNT (node:internal/streams/readable:1345:12)
+      at processTicksAndRejections (node:internal/process/task_queues:83:21)
+
+npm manifest: 
+  {
+    "name": "hardhat-simple-storage",
+    "version": "1.0.0",
+    "license": "MIT"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
