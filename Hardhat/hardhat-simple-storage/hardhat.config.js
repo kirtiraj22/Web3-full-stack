@@ -15,6 +15,12 @@ module.exports = {
       accounts: [PRIVATE_KEY],
       chainId: 11155111,
     },
+    //adding a localhost to deploy the contracts
+    localhost: {
+      url: "http://127.0.0.1:8545/",
+      //accounts: they are already provided by hardhat
+      chainId: 31337, //chain id of hardhat
+    },
   },
   solidity: "0.8.8",
   etherscan: {
